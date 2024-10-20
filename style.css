@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(./assets/background\ image.avif) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#road{
+    background: url(./assets/road\ image.jpg) repeat-y center;
+    height: 1200vh;
+    width: 86vh;
+    position: relative;
+    top: -100vh;
+    z-index: -5;
+}
+
+#start{
+    position: absolute;
+    top: 50vh;
+    left: 46vw;
+    z-index: 100;
+    font-size: 2rem;
+    background-color: red;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#score{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 2rem;
+    padding: 0.8rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+
+#enemyCar1{
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    left : -15rem;
+    z-index: 102;
+    animation: eCar1 infinite linear 4s;
+}
+
+#enemyCar2{
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    left : -6rem;
+    z-index: 102;
+    animation: eCar2 infinite linear 6s;
+}
+
+#enemyCar3{
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    left : 4rem;
+    z-index: 102;
+    animation: eCar3 infinite linear 5s;
+}
+
+#enemyCar4{
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    left : 13rem;
+    z-index: 102;
+    animation: eCar4 infinite linear 3s;
+}
+
+.eCar{
+    width: 8rem;
+    height: 10rem;
+}
+
+
+.myCarImg{
+    width: 12rem;
+    height: 10rem;
+}
+
+#myCar{
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    top: 17vh;
+}
+
+@keyframes eCar1 {
+    0%{
+        top: -30vh;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+
+@keyframes eCar2 {
+    0%{
+        top: -50vh;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+
+@keyframes eCar3 {
+    0%{
+        top: -70vh;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+
+@keyframes eCar4 {
+    0%{
+        top: -80vh;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+
+
+@media(max-width : 980px){
+    #score{
+        position: absolute;
+        top: 0.3rem;
+        left: 0.3rem;
+        font-size: 0.8rem;
+        padding: 0.8rem;
+        background-color: white;
+        border-radius: 1rem;
+    }
+
+    #start{
+        left: 44vw;
+    }
+}
+
+@media(max-width : 756px){
+    #road{
+        width: 30vh;
+    }
+
+    #enemyCar1{
+        width: 1rem;
+        height: 1rem;
+        left: -6rem;
+        
+    }
+
+    #enemyCar2{
+        width: 1rem;
+        height: 1rem;
+        left: -2.5rem;
+        
+    }
+
+    #enemyCar3{
+        width: 1rem;
+        height: 1rem;
+        left : 0.5rem;
+    }
+
+    #enemyCar4{
+        width: 1rem;
+        height: 1rem;
+        left : 4rem;
+    }
+
+    .eCar{
+        width: 3rem;
+        height: 5rem;
+    }
+
+    .myCarImg{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    #myCar{
+        width: 6rem;
+        height: 6rem;
+        top: 80vh;
+    }
+
+    #score{
+        position: absolute;
+        top: 0.2rem;
+        left: 0.2rem;
+        font-size: 0.8rem;
+        padding: 0.4rem;
+        background-color: white;
+        border-radius: 1rem;
+    }
+
+    #start{
+        left: 40vw;
+    }
+}
