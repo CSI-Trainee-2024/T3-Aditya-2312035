@@ -106,7 +106,7 @@ start.addEventListener("click", function(){
 
         //writing this so that the our car will not go outside of the track
         
-        if(myCar_left < 300 || myCar_right > 950 || myCar_top < 20 || myCar_bottom > 740){
+        if(myCar_left < 450 || myCar_right > 1050 || myCar_top < 20 || myCar_bottom > 740){
             setTimeout(()=>{
                 alert(`GAME OVER!!!`);
             })
