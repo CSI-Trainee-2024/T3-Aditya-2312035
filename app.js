@@ -56,7 +56,7 @@ start.addEventListener("click", function(){
         }
 
         if(x.code == 'KeyA' || x.code == 'ArrowLeft'){
-            l = l-1;
+            l = l-2;
         }
 
         if(x.code == 'KeyS' || x.code == 'ArrowDown'){
@@ -64,7 +64,7 @@ start.addEventListener("click", function(){
         }
 
         if(x.code == 'KeyD' || x.code == 'ArrowRight'){
-            l = l+1;
+            l = l+2;
         }
 
         document.getElementById("myCar").style.top = `${t}vh`;
